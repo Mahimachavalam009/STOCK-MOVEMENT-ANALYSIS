@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentimentra | AI-Powered Stock Sentiment Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            min-height: 80vh;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            padding: 0.75rem 1.5rem;
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #dbeafe;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-icon i {
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+        
+        .screenshot {
+            border-radius: 12px;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+            border: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i href="home.html" class="fas fa-chart-line text-primary me-2"></i>Sentimentra
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how-it-works">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <a href="/auth/login" class="btn btn-outline-primary me-2">Sign In</a>
+                    <a href="/auth/register" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">AI-Powered Stock Sentiment Analysis</h1>
+                    <p class="lead mb-5">Harness the power of artificial intelligence to understand market sentiment and make smarter investment decisions.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#" class="btn btn-primary btn-lg">
+                            Start Free Trial
+                        </a>
+                        <a href="#how-it-works" class="btn btn-outline-dark btn-lg">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Stock market dashboard" 
+                         class="img-fluid screenshot mt-5 mt-lg-0">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-5 my-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Powerful Sentiment Analysis</h2>
+                <p class="text-muted lead">Understand market movements before they happen</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h4>News Analysis</h4>
+                    <p class="text-muted">Real-time sentiment scoring of financial news from thousands of sources worldwide.</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h4>Social Media</h4>
+                    <p class="text-muted">Track what investors are saying on Twitter, Reddit, and financial forums.</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h4>Earnings Calls</h4>
+                    <p class="text-muted">Analyze tone and sentiment from company earnings calls and transcripts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                         alt="How Sentimentra works" 
+                         class="img-fluid screenshot">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">How Sentimentra Works</h2>
+                    <div class="d-flex mb-4">
+                        <div class="me-4">
+                            <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                1
+                            </div>
+                        </div>
+                        <div>
+                            <h5>Data Collection</h5>
+                            <p class="text-muted">We gather millions of data points from news, social media, and financial reports.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex mb-4">
+                        <div class="me-4">
+                            <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                2
+                            </div>
+                        </div>
+                        <div>
+                            <h5>AI Processing</h5>
+                            <p class="text-muted">Our advanced NLP algorithms analyze text for sentiment and market implications.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex">
+                        <div class="me-4">
+                            <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                3
+                            </div>
+                        </div>
+                        <div>
+                            <h5>Clear Insights</h5>
+                            <p class="text-muted">Get easy-to-understand sentiment indicators to guide your investment strategy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="text-center p-5 bg-primary rounded-3 text-white">
+                <h2 class="fw-bold mb-4">Ready to transform your investing?</h2>
+                <p class="lead mb-4">Join thousands of investors using Sentimentra to gain an edge in the market.</p>
+                <a href="#" class="btn btn-light btn-lg px-4">Start Your Free Trial</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-chart-line me-2"></i>Sentimentra
+                    </h5>
+                    <p>AI-powered sentiment analysis for smarter stock market investing.</p>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <h6 class="fw-bold">Product</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Features</a></li>
+                                <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Pricing</a></li>
+                                <li><a href="#" class="text-white-50 text-decoration-none">API</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <h6 class="fw-bold">Company</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">About</a></li>
+                                <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Careers</a></li>
+                                <li><a href="#" class="text-white-50 text-decoration-none">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="fw-bold">Legal</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Privacy</a></li>
+                                <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Terms</a></li>
+                                <li><a href="#" class="text-white-50 text-decoration-none">Security</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center text-white-50">
+                <p class="mb-0">&copy; 2023 Sentimentra. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
